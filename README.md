@@ -68,6 +68,8 @@
 - Eigenstaendige bedeutung
 - Besteht aus Silben
 
+- Ich suche dominante Referenztraeger(Hochfrequenz), mit expliziter Wiederaufnahme.
+
 ## Vorgehensweise
 - text.html runterladen
 - Javascript raus
@@ -82,6 +84,7 @@
 - Position von Absaetzen und Satzenden .(!?)
 - Satzzeichen und Tokens raus aus Tokenizerliste
 - Lemmatizer/Stemmer
+- Stopwords raus
 
 
 | Affix	 | Example	 | Schema | 	Description |
