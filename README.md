@@ -107,4 +107,4 @@
 - Dispersion Plot(Referaenztraegerverteilung)
 -> Zeight Positionen der Woerter auf einer Art Landkarte
 
-- Daraus folgt minimap
+- Daraus folgt minimap (Verteilung der Dominanten Referenztraeger)

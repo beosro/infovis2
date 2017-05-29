@@ -61,6 +61,10 @@ def lexical_dispersion_plot():
 def bubble():
     return render_template('d3js/bubble.html')
 
+@app.route("/star.html")
+def star():
+    return render_template('d3js/star.html')
+
 
 if __name__ == "__main__":
     app.run()
