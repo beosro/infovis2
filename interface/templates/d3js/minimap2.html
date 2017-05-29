@@ -99,11 +99,17 @@ for (var i = 0; i < mini_map.length; i++) {
        + hwb2rgb(1-(j*.9/frequencies.length), .2, .2).r + ','
        + hwb2rgb(1-(j*.9/frequencies.length), .2, .2).g + ','
        + hwb2rgb(1-(j*.9/frequencies.length), .2, .2).b + ')';
+       var grey = Math.floor((j/frequencies.length*220) + 35);
+      var color = 'rgb(' + grey + ',' + grey + ',' + grey +')';
       // console.log(color);
+      var text_color = '#000';
+      // if(grey < 90){
+      //   text_color = '#fff';
+      // }
       continue;
     }
   }
-  output +=  (found  ? '<span style="background-color: ' + color + '">' + mini_map[i] + '</span> ' : mini_map[i] + ' ');
+  output +=  (found  ? '<span style="background-color: ' + color + '; color:' + text_color + '">' + mini_map[i] + '</span> ' : mini_map[i] + ' ');
 
 }
 

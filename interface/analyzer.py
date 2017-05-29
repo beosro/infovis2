@@ -176,5 +176,20 @@ def main():
             output.append(word)
     print("var mini_map = " + str(output) + ";")
 
+    # words per paragraph (funktioniert so nich)
+    # output = '['
+    # paragraphs = text.split(paragraph_end_token)
+    #
+    # for x in range(len(paragraphs)):
+    #     output += '{paragraph_nr:' + str(x) + ',['
+    #     for term in fdist1.most_common(20):
+    #         term = term[0]
+    #         output += '{ word:"' + term + '", amount: ' + str(paragraphs[x].count(term)) + '},'
+    #     output += '},'
+    # output += ']'
+    # print('var term_per_paragraph = ' + output + ';')
+
+
+
 if __name__ == '__main__':
     main()
