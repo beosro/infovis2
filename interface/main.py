@@ -21,7 +21,7 @@ def hello():
         name='"' + request.form['name'] + '"'
         print (name)
         os.system('wget -O file.html ' + name )
-        os.system('python analyzer.py file.html > templates/data.js')
+        os.system('python3 analyzer.py file.html > templates/data.js')
 
 
 
