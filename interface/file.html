@@ -2,31 +2,32 @@
 <html class="client-nojs" lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
-<title>Thymeleaf - Wikipedia</title>
+<title>Boids - Wikipedia</title>
 <script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
-<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Thymeleaf","wgTitle":"Thymeleaf","wgCurRevisionId":778791908,"wgRevisionId":778791908,"wgArticleId":33427161,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using deprecated image syntax","Java enterprise platform","Template engines","Java (programming language) libraries","Free software programmed in Java (programming language)"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Thymeleaf","wgRelevantArticleId":33427161,"wgRequestId":"WSxAQwpAMEcAAE7tGIUAAABR","wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3526177","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Boids","wgTitle":"Boids","wgCurRevisionId":781733927,"wgRevisionId":781733927,"wgArticleId":404015,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Use mdy dates from July 2011","Artificial life"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Boids","wgRelevantArticleId":404015,"wgRequestId":"WUGAKgpAAEYAAffjmbQAAABM","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgPopupsShouldSendModuleToUser":false,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q833640","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["preload","preloadparams","preloadtitle","undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","ext.tmh.thumbnail.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
 mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
 
-});mw.loader.load(["ext.cite.a11y","mediawiki.toc","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
-<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+});mw.loader.load(["ext.cite.a11y","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform","mw.TMHGalleryHook.js","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.gadget.featured-articles-links","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.tmh.thumbnail.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
 <script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
 <meta name="ResourceLoaderDynamicStyles" content=""/>
 <link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
-<meta name="generator" content="MediaWiki 1.30.0-wmf.1"/>
+<meta name="generator" content="MediaWiki 1.30.0-wmf.4"/>
 <meta name="referrer" content="origin-when-cross-origin"/>
-<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Thymeleaf"/>
-<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Thymeleaf&amp;action=edit"/>
-<link rel="edit" title="Edit this page" href="/w/index.php?title=Thymeleaf&amp;action=edit"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Boids_OpenGL_example.webm/500px--Boids_OpenGL_example.webm.jpg"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Boids"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Boids&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Boids&amp;action=edit"/>
 <link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
 <link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
 <link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
 <link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
 <link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
-<link rel="canonical" href="https://en.wikipedia.org/wiki/Thymeleaf"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Boids"/>
 <link rel="dns-prefetch" href="//login.wikimedia.org"/>
 <link rel="dns-prefetch" href="//meta.wikimedia.org" />
 </head>
-<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Thymeleaf rootpage-Thymeleaf skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Boids rootpage-Boids skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
 		<div id="content" class="mw-body" role="main">
 			<a id="top"></a>
@@ -34,192 +35,286 @@ mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","cs
 							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
 						<div class="mw-indicators mw-body-content">
 </div>
-			<h1 id="firstHeading" class="firstHeading" lang="en">Thymeleaf</h1>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Boids</h1>
 									<div id="bodyContent" class="mw-body-content">
 									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
 								<div id="contentSub"></div>
 												<div id="jump-to-nav" class="mw-jump">
 					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
 				</div>
-				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><table class="infobox vevent" style="width:22em">
-<caption class="summary">Thymeleaf</caption>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<div id="mwe_player_0" class="PopUpMediaTransform" style="width:220px;" videopayload="&lt;div class=&quot;mediaContainer&quot; style=&quot;width:480px&quot;&gt;&lt;video id=&quot;mwe_player_1&quot; poster=&quot;//upload.wikimedia.org/wikipedia/commons/thumb/4/43/Boids_OpenGL_example.webm/480px--Boids_OpenGL_example.webm.jpg&quot; controls=&quot;&quot; preload=&quot;none&quot; autoplay=&quot;&quot; style=&quot;width:480px;height:480px&quot; class=&quot;kskin&quot; data-durationhint=&quot;80&quot; data-startoffset=&quot;0&quot; data-mwtitle=&quot;Boids_OpenGL_example.webm&quot; data-mwprovider=&quot;wikimediacommons&quot;&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/43/Boids_OpenGL_example.webm/Boids_OpenGL_example.webm.480p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;SD WebM (480P)&quot; data-shorttitle=&quot;WebM 480P&quot; data-transcodekey=&quot;480p.webm&quot; data-width=&quot;480&quot; data-height=&quot;480&quot; data-bandwidth=&quot;1017288&quot; data-framerate=&quot;25&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/4/43/Boids_OpenGL_example.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8&amp;quot;&quot; data-title=&quot;Original WebM file, 500 × 500 (1.96 Mbps)&quot; data-shorttitle=&quot;WebM source&quot; data-width=&quot;500&quot; data-height=&quot;500&quot; data-bandwidth=&quot;1956537&quot; data-framerate=&quot;25&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/43/Boids_OpenGL_example.webm/Boids_OpenGL_example.webm.480p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;SD Ogg video (480P)&quot; data-shorttitle=&quot;Ogg 480P&quot; data-transcodekey=&quot;480p.ogv&quot; data-width=&quot;480&quot; data-height=&quot;480&quot; data-bandwidth=&quot;2026912&quot; data-framerate=&quot;60&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/43/Boids_OpenGL_example.webm/Boids_OpenGL_example.webm.160p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;Low bandwidth WebM (160P)&quot; data-shorttitle=&quot;WebM 160P&quot; data-transcodekey=&quot;160p.webm&quot; data-width=&quot;160&quot; data-height=&quot;160&quot; data-bandwidth=&quot;128832&quot; data-framerate=&quot;25&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/43/Boids_OpenGL_example.webm/Boids_OpenGL_example.webm.160p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;Low bandwidth Ogg video (160P)&quot; data-shorttitle=&quot;Ogg 160P&quot; data-transcodekey=&quot;160p.ogv&quot; data-width=&quot;160&quot; data-height=&quot;160&quot; data-bandwidth=&quot;159872&quot; data-framerate=&quot;15&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/43/Boids_OpenGL_example.webm/Boids_OpenGL_example.webm.240p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;Small WebM (240P)&quot; data-shorttitle=&quot;WebM 240P&quot; data-transcodekey=&quot;240p.webm&quot; data-width=&quot;240&quot; data-height=&quot;240&quot; data-bandwidth=&quot;256200&quot; data-framerate=&quot;25&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/43/Boids_OpenGL_example.webm/Boids_OpenGL_example.webm.240p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;Small Ogg video (240P)&quot; data-shorttitle=&quot;Ogg 240P&quot; data-transcodekey=&quot;240p.ogv&quot; data-width=&quot;240&quot; data-height=&quot;240&quot; data-bandwidth=&quot;508264&quot; data-framerate=&quot;60&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/43/Boids_OpenGL_example.webm/Boids_OpenGL_example.webm.360p.webm&quot; type=&quot;video/webm; codecs=&amp;quot;vp8, vorbis&amp;quot;&quot; data-title=&quot;WebM (360P)&quot; data-shorttitle=&quot;WebM 360P&quot; data-transcodekey=&quot;360p.webm&quot; data-width=&quot;360&quot; data-height=&quot;360&quot; data-bandwidth=&quot;509984&quot; data-framerate=&quot;25&quot;/&gt;&lt;source src=&quot;//upload.wikimedia.org/wikipedia/commons/transcoded/4/43/Boids_OpenGL_example.webm/Boids_OpenGL_example.webm.360p.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; data-title=&quot;Ogg video (360P)&quot; data-shorttitle=&quot;Ogg 360P&quot; data-transcodekey=&quot;360p.ogv&quot; data-width=&quot;360&quot; data-height=&quot;360&quot; data-bandwidth=&quot;1014752&quot; data-framerate=&quot;60&quot;/&gt;&lt;/video&gt;&lt;/div&gt;"><img alt="File:Boids OpenGL example.webm" style="width:220px;height:220px" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/43/Boids_OpenGL_example.webm/220px--Boids_OpenGL_example.webm.jpg" /><a href="//upload.wikimedia.org/wikipedia/commons/4/43/Boids_OpenGL_example.webm" title="Play media" target="new"><span class="play-btn-large"><span class="mw-tmh-playtext">Play media</span></span></a></div>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Boids_OpenGL_example.webm" class="internal" title="Enlarge"></a></div>
+A Boids example created in <a href="/wiki/OpenGL" title="OpenGL">OpenGL</a></div>
+</div>
+</div>
+<p><b>Boids</b> is an <a href="/wiki/Artificial_life" title="Artificial life">artificial life</a> program, developed by <a href="/wiki/Craig_Reynolds_(computer_graphics)" title="Craig Reynolds (computer graphics)">Craig Reynolds</a> in 1986, which simulates the <a href="/wiki/Flocking_(behavior)" title="Flocking (behavior)">flocking</a> behaviour of birds. His paper on this topic was published in 1987 in the proceedings of the <a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> <a href="/wiki/SIGGRAPH" title="SIGGRAPH">SIGGRAPH</a> conference.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> The name "boid" corresponds to a shortened version of "bird-oid object", which refers to a bird-like object.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
+<div class="thumb tmulti tright">
+<div class="thumbinner" style="width:204px;max-width:204px">
+<div class="tsingle" style="margin:1px;width:202px;max-width:202px">
+<div class="thumbimage"><a href="/wiki/File:Rule_separation.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Rule_separation.gif/200px-Rule_separation.gif" width="200" height="134" srcset="//upload.wikimedia.org/wikipedia/commons/e/e1/Rule_separation.gif 1.5x" data-file-width="217" data-file-height="145" /></a></div>
+<div class="thumbcaption" style="clear:left">Separation</div>
+</div>
+<div class="tsingle" style="margin:1px;width:202px;max-width:202px">
+<div class="thumbimage"><a href="/wiki/File:Rule_alignment.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Rule_alignment.gif/200px-Rule_alignment.gif" width="200" height="134" srcset="//upload.wikimedia.org/wikipedia/commons/e/e1/Rule_alignment.gif 1.5x" data-file-width="217" data-file-height="145" /></a></div>
+<div class="thumbcaption" style="clear:left">Alignment</div>
+</div>
+<div class="tsingle" style="margin:1px;width:202px;max-width:202px">
+<div class="thumbimage"><a href="/wiki/File:Rule_cohesion.gif" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Rule_cohesion.gif/200px-Rule_cohesion.gif" width="200" height="134" srcset="//upload.wikimedia.org/wikipedia/commons/2/2b/Rule_cohesion.gif 1.5x" data-file-width="217" data-file-height="145" /></a></div>
+<div class="thumbcaption" style="clear:left">Cohesion</div>
+</div>
+<div class="thumbcaption" style="clear:left;text-align:left;background-color:transparent">Rules applied in simple Boids</div>
+</div>
+</div>
+<p>As with most artificial life simulations, Boids is an example of <a href="/wiki/Emergence" title="Emergence">emergent</a> behavior; that is, the complexity of Boids arises from the interaction of individual agents (the boids, in this case) adhering to a set of simple rules. The rules applied in the simplest Boids world are as follows:</p>
+<ul>
+<li><b>separation</b>: <a href="https://en.wiktionary.org/wiki/steer#Verb" class="extiw" title="wikt:steer">steer</a> to avoid crowding local flockmates</li>
+<li><b>alignment</b>: steer towards the average heading of local flockmates</li>
+<li><b>cohesion</b>: steer to move toward the average position (center of mass) of local flockmates</li>
+</ul>
+<p>More complex rules can be added, such as obstacle avoidance and goal seeking.</p>
+<p>The basic model has been extended in several different ways since Reynolds proposed it. For instance, Delgado-Mata et&#160;al.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">[3]</a></sup> extended the basic model to incorporate the effects of fear. Olfaction was used to transmit emotion between animals, through pheromones modelled as particles in a free expansion gas. Hartman and Benes<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">[4]</a></sup> introduced a complementary force to the alignment that they call the change of leadership. This steer deﬁnes the chance of the boid to become a leader and try to escape.</p>
+<p>The movement of Boids can be characterized as either chaotic (splitting groups and wild behaviour) or orderly. Unexpected behaviours, such as splitting flocks and reuniting after avoiding obstacles, can be considered emergent.</p>
+<p>The boids framework is often used in computer graphics, providing realistic-looking representations of flocks of birds and other creatures, such as schools of fish or herds of animals. It was for instance used in the 1998 video game <i><a href="/wiki/Half-Life_(video_game)" title="Half-Life (video game)">Half-Life</a></i> for the flying bird-like creatures seen at the end of the game on <a href="/wiki/Locations_of_Half-Life#Xen" title="Locations of Half-Life">Xen</a>, named "boid" in the game files.</p>
+<p>The Boids model can be used for direct control and stabilization of teams of simple Unmanned Ground Vehicles (UGV)<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">[5]</a></sup> or Micro Aerial Vehicles (MAV)<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">[6]</a></sup> in <a href="/wiki/Swarm_robotics" title="Swarm robotics">swarm robotics</a>. For stabilization of heterogeneous UAV-UGV teams, the model was adapted for using onboard relative localization by Saska et&#160;al.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">[7]</a></sup></p>
+<p>At the time of proposal, Reynolds' approach represented a giant step forward compared to the traditional techniques used in computer animation for motion pictures. The first animation created with the model was <i><a href="/wiki/Stanley_and_Stella_in:_Breaking_the_Ice" title="Stanley and Stella in: Breaking the Ice">Stanley and Stella in: Breaking the Ice</a></i> (1987), followed by a feature film debut in <a href="/wiki/Tim_Burton" title="Tim Burton">Tim Burton</a>'s film <i><a href="/wiki/Batman_Returns" title="Batman Returns">Batman Returns</a></i> (1992) with computer generated bat swarms and armies of penguins marching through the streets of Gotham City.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">[8]</a></sup></p>
+<p>The boids model has been used for other interesting applications. It has been applied to automatically program Internet multi-channel radio stations.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">[9]</a></sup> It has also been used for visualizing information<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">[10]</a></sup> and for optimization tasks.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">[11]</a></sup></p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boids&amp;action=edit&amp;section=1" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Swarm_intelligence" title="Swarm intelligence">Swarm intelligence</a></li>
+<li><a href="/wiki/Collective_cell_migration" title="Collective cell migration">Collective cell migration</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boids&amp;action=edit&amp;section=2" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation journal"><a href="/wiki/Craig_Reynolds_(computer_graphics)" title="Craig Reynolds (computer graphics)">Reynolds, Craig</a> (1987). "Flocks, herds and schools: A distributed behavioral model.". <i><a href="/wiki/SIGGRAPH" title="SIGGRAPH">SIGGRAPH</a> '87: Proceedings of the 14th annual conference on Computer graphics and interactive techniques</i>. <a href="/wiki/Association_for_Computing_Machinery" title="Association for Computing Machinery">Association for Computing Machinery</a>: 25–34. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-89791-227-6" title="Special:BookSources/0-89791-227-6">0-89791-227-6</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F37401.37406">10.1145/37401.37406</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.atitle=Flocks%2C+herds+and+schools%3A+A+distributed+behavioral+model.&amp;rft.aufirst=Craig&amp;rft.aulast=Reynolds&amp;rft.date=1987&amp;rft.genre=article&amp;rft.isbn=0-89791-227-6&amp;rft.jtitle=SIGGRAPH+%2787%3A+Proceedings+of+the+14th+annual+conference+on+Computer+graphics+and+interactive+techniques&amp;rft.pages=25-34&amp;rft_id=info%3Adoi%2F10.1145%2F37401.37406&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation journal">Banks, Alec; Vincent, Jonathan; Anyakoha, Chukwudi (July 2007). "A review of particle swarm optimization. Part I: background and development". <i>Natural Computing</i>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1007%2Fs11047-007-9049-5">10.1007/s11047-007-9049-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.atitle=A+review+of+particle+swarm+optimization.+Part+I%3A+background+and+development&amp;rft.au=Anyakoha%2C+Chukwudi&amp;rft.au=Vincent%2C+Jonathan&amp;rft.aufirst=Alec&amp;rft.aulast=Banks&amp;rft.date=2007-07&amp;rft.genre=article&amp;rft.jtitle=Natural+Computing&amp;rft_id=info%3Adoi%2F10.1007%2Fs11047-007-9049-5&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation journal">Delgado-Mata, Carlos; Martinez, Jesus Ibanez; Bee, Simon; Ruiz-Rodarte, Rocio; Aylett, Ruth (2007). "On the use of Virtual Animals with Artificial Fear in Virtual Environments". <i>New Generation Computing</i>. <b>25</b> (2): 145–169. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1007%2Fs00354-007-0009-5">10.1007/s00354-007-0009-5</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.atitle=On+the+use+of+Virtual+Animals+with+Artificial+Fear+in+Virtual+Environments&amp;rft.au=Aylett%2C+Ruth&amp;rft.au=Bee%2C+Simon&amp;rft.au=Martinez%2C+Jesus+Ibanez&amp;rft.au=Ruiz-Rodarte%2C+Rocio&amp;rft.aufirst=Carlos&amp;rft.aulast=Delgado-Mata&amp;rft.date=2007&amp;rft.genre=article&amp;rft.issue=2&amp;rft.jtitle=New+Generation+Computing&amp;rft.pages=145-169&amp;rft.volume=25&amp;rft_id=info%3Adoi%2F10.1007%2Fs00354-007-0009-5&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation journal">Hartman, Christopher; Benes̆, Bedr̆ich (July 2006). "Autonomous boids". <i>Computer Animation and Virtual Worlds</i>. <b>17</b> (3–4): 199–206. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1002%2Fcav.123">10.1002/cav.123</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.atitle=Autonomous+boids&amp;rft.au=Benes%CC%86%2C+Bedr%CC%86ich&amp;rft.aufirst=Christopher&amp;rft.aulast=Hartman&amp;rft.date=2006-07&amp;rft.genre=article&amp;rft.issue=3%E2%80%934&amp;rft.jtitle=Computer+Animation+and+Virtual+Worlds&amp;rft.pages=199-206&amp;rft.volume=17&amp;rft_id=info%3Adoi%2F10.1002%2Fcav.123&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation conference">Min, Hongkyu; Wang, Zhidong (2011). <a rel="nofollow" class="external text" href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=5980123&amp;isnumber=5979525"><i>Design and analysis of Group Escape Behavior for distributed autonomous mobile robots</i></a>. IEEE International Conference on Robotics and Automation (ICRA).</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.au=Wang%2C+Zhidong&amp;rft.aufirst=Hongkyu&amp;rft.aulast=Min&amp;rft.btitle=Design+and+analysis+of+Group+Escape+Behavior+for+distributed+autonomous+mobile+robots&amp;rft.date=2011&amp;rft.genre=conference&amp;rft_id=http%3A%2F%2Fieeexplore.ieee.org%2Fstamp%2Fstamp.jsp%3Ftp%3D%26arnumber%3D5980123%26isnumber%3D5979525&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-6">^</a></b></span> <span class="reference-text"><cite class="citation conference">Saska, Martin; Jan, Vakula; Libor, Preucil (2014). <i>Swarms of micro aerial vehicles stabilized under a visual relative localization</i>. IEEE International Conference on Robotics and Automation (ICRA).</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.au=Jan%2C+Vakula&amp;rft.au=Libor%2C+Preucil&amp;rft.aufirst=Martin&amp;rft.aulast=Saska&amp;rft.btitle=Swarms+of+micro+aerial+vehicles+stabilized+under+a+visual+relative+localization&amp;rft.date=2014&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation conference">Saska, Martin; Vojtech, Vonasek; Tomas, Krajnik; Libor, Preucil (2012). <i>Coordination and Navigation of Heterogeneous UAVs-UGVs Teams Localized by a Hawk-Eye Approach</i>. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS).</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.au=Libor%2C+Preucil&amp;rft.au=Tomas%2C+Krajnik&amp;rft.au=Vojtech%2C+Vonasek&amp;rft.aufirst=Martin&amp;rft.aulast=Saska&amp;rft.btitle=Coordination+and+Navigation+of+Heterogeneous+UAVs-UGVs+Teams+Localized+by+a+Hawk-Eye+Approach&amp;rft.date=2012&amp;rft.genre=conference&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web">Lebar Bajec, Iztok; Heppner, Frank H. (2009). <a rel="nofollow" class="external text" href="http://lrss.fri.uni-lj.si/people/ilbajec/papers/ilb_ab09.pdf">"Organized flight in birds"</a> <span style="font-size:85%;">(PDF)</span>. <i>Animal Behaviour</i>. pp.&#160;777–789. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1016%2Fj.anbehav.2009.07.007">10.1016/j.anbehav.2009.07.007</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.atitle=Organized+flight+in+birds&amp;rft.au=Heppner%2C+Frank+H.&amp;rft.aufirst=Iztok&amp;rft.aulast=Lebar+Bajec&amp;rft.date=2009&amp;rft.genre=unknown&amp;rft.jtitle=Animal+Behaviour&amp;rft.pages=777-789&amp;rft_id=http%3A%2F%2Flrss.fri.uni-lj.si%2Fpeople%2Filbajec%2Fpapers%2Filb_ab09.pdf&amp;rft_id=info%3Adoi%2F10.1016%2Fj.anbehav.2009.07.007&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation conference">Ibáñez, Jesús; Gómez-Skarmeta, Antonio F.; Blat, Josep (2003). "DJ-boids: emergent collective behavior as multichannel radio station programming". <i>Proceedings of the 8th international conference on Intelligent User Interfaces</i>. pp.&#160;248–250. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1145%2F604045.604089">10.1145/604045.604089</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.atitle=DJ-boids%3A+emergent+collective+behavior+as+multichannel+radio+station+programming&amp;rft.au=Blat%2C+Josep&amp;rft.au=G%C3%B3mez-Skarmeta%2C+Antonio+F.&amp;rft.aufirst=Jes%C3%BAs&amp;rft.aulast=Ib%C3%A1%C3%B1ez&amp;rft.btitle=Proceedings+of+the+8th+international+conference+on+Intelligent+User+Interfaces&amp;rft.date=2003&amp;rft.genre=conference&amp;rft.pages=248-250&amp;rft_id=info%3Adoi%2F10.1145%2F604045.604089&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation conference">Moere, A V (2004). "Time-Varying Data Visualization Using Information Flocking Boids". <i>Proceedings of the IEEE Symposium on Information Visualization</i>. pp.&#160;97–104. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1109%2FINFVIS.2004.65">10.1109/INFVIS.2004.65</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.atitle=Time-Varying+Data+Visualization+Using+Information+Flocking+Boids&amp;rft.aufirst=A+V&amp;rft.aulast=Moere&amp;rft.btitle=Proceedings+of+the+IEEE+Symposium+on+Information+Visualization&amp;rft.date=2004&amp;rft.genre=conference&amp;rft.pages=97-104&amp;rft_id=info%3Adoi%2F10.1109%2FINFVIS.2004.65&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation journal">Cui, Zhihua; Shi, Zhongzhi (2009). "Boid particle swarm optimisation". <i>International Journal of Innovative Computing and Applications</i>. <b>2</b> (2): 77–85. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1504%2FIJICA.2009.031778">10.1504/IJICA.2009.031778</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ABoids&amp;rft.atitle=Boid+particle+swarm+optimisation&amp;rft.au=Shi%2C+Zhongzhi&amp;rft.aufirst=Zhihua&amp;rft.aulast=Cui&amp;rft.date=2009&amp;rft.genre=article&amp;rft.issue=2&amp;rft.jtitle=International+Journal+of+Innovative+Computing+and+Applications&amp;rft.pages=77-85&amp;rft.volume=2&amp;rft_id=info%3Adoi%2F10.1504%2FIJICA.2009.031778&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Boids&amp;action=edit&amp;section=3" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.red3d.com/cwr/boids/">Craig Reynolds' Boids page</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.vergenet.net/~conrad/boids/pseudocode.html">Explanation of algorithm in pseudocode</a></li>
+<li><a rel="nofollow" class="external text" href="http://gpolo.github.com/birdflocking">JavaScript implementation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.navgen.com/3d_boids/">3D Boids Simulation using OpenGL, used by the BBC's Natural History Unit</a></li>
+<li><a rel="nofollow" class="external text" href="http://black-square.github.io/BirdFlock/">Live In-Browser 3D Simulation of Bird Flocking Behavior in Unity3D</a> – Open Source implementation for Windows, Linux and Mac</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/piskvorky/PredatorPrey">UNIX+Windows open source implementation in C++, using OpenGL and simulation controls</a></li>
+<li><a rel="nofollow" class="external text" href="http://owenmcnaughton.github.io/Boids.js">Open source 3D WebGL implementation with controls</a></li>
+</ul>
+<div role="navigation" class="navbox navbox-spacing-temp" aria-labelledby="Swarming" style="padding:3px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
 <tr>
-<td colspan="2" style="text-align:center"><a href="/wiki/File:Thymeleaf_Logo_with_name_small.png" class="image"><img alt="Thymeleaf Logo with name small.png" src="//upload.wikimedia.org/wikipedia/commons/5/55/Thymeleaf_Logo_with_name_small.png" width="302" height="55" data-file-width="302" data-file-height="55" /></a></td>
+<th scope="col" class="navbox-title" colspan="3">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Swarming" title="Template:Swarming"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Swarming" title="Template talk:Swarming"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Swarming&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div id="Swarming" style="font-size:114%;margin:0 4em"><a href="/wiki/Swarm_behaviour" title="Swarm behaviour">Swarming</a></div>
+</th>
 </tr>
 <tr>
-<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_developer" title="Software developer">Developer(s)</a></th>
-<td>Daniel Fernández</td>
-</tr>
-<tr>
-<td colspan="2" style="text-align:center"></td>
-</tr>
-<tr>
-<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
-<td>
-<div style="margin:0px;">3.0.2<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> / September&#160;28,&#160;2016<span style="display:none">&#160;(<span class="bday dtstart published updated">2016-09-28</span>)</span></div>
+<th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Swarm_behaviour#Biological_swarming" title="Swarm behaviour">Biological swarming</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Agent-based_model_in_biology" title="Agent-based model in biology">Agent-based model in biology</a></li>
+<li><a href="/wiki/Bait_ball" title="Bait ball">Bait ball</a></li>
+<li><a href="/wiki/Collective_animal_behavior" title="Collective animal behavior">Collective animal behavior</a></li>
+<li><a href="/wiki/Feeding_frenzy" title="Feeding frenzy">Feeding frenzy</a></li>
+<li><a href="/wiki/Flock_(birds)" title="Flock (birds)">Flock</a></li>
+<li><a href="/wiki/Flocking_(behavior)" title="Flocking (behavior)">Flocking</a></li>
+<li><a href="/wiki/Herd" title="Herd">Herd</a></li>
+<li><a href="/wiki/Herd_behavior" title="Herd behavior">Herd behavior</a></li>
+<li><a href="/wiki/Mixed-species_foraging_flock" title="Mixed-species foraging flock">Mixed-species foraging flock</a></li>
+<li><a href="/wiki/Mobbing_(animal_behavior)" title="Mobbing (animal behavior)">Mobbing behavior</a></li>
+<li><a href="/wiki/Pack_(canine)" title="Pack (canine)">Pack</a></li>
+<li><a href="/wiki/Pack_hunter" title="Pack hunter">Pack hunter</a></li>
+<li><a href="/wiki/Patterns_of_self-organization_in_ants" title="Patterns of self-organization in ants">Patterns of self-organization in ants</a></li>
+<li><a href="/wiki/Shoaling_and_schooling" title="Shoaling and schooling">Shoaling and schooling</a></li>
+<li><a href="/wiki/Sort_sol_(bird_flock)" class="mw-redirect" title="Sort sol (bird flock)">Sort sol</a></li>
+<li><a href="/wiki/Symmetry_breaking_of_escaping_ants" title="Symmetry breaking of escaping ants">Symmetry breaking of escaping ants</a></li>
+<li><a href="/wiki/Swarm_behaviour" title="Swarm behaviour">Swarming behaviour</a></li>
+<li><a href="/wiki/Swarming_(honey_bee)" title="Swarming (honey bee)">Swarming (honey bee)</a></li>
+<li><a href="/wiki/Swarming_motility" title="Swarming motility">Swarming motility</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" rowspan="6" style="width:1px;padding:0px 0px 0px 2px">
+<div><a href="/wiki/File:Auklet_flock_Shumagins_1986.jpg" class="image"><img alt="Auklet flock Shumagins 1986.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Auklet_flock_Shumagins_1986.jpg/140px-Auklet_flock_Shumagins_1986.jpg" width="140" height="95" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Auklet_flock_Shumagins_1986.jpg/210px-Auklet_flock_Shumagins_1986.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Auklet_flock_Shumagins_1986.jpg/280px-Auklet_flock_Shumagins_1986.jpg 2x" data-file-width="3756" data-file-height="2561" /></a></div>
 </td>
 </tr>
 <tr>
-<th scope="row" style="white-space: nowrap;">Development status</th>
-<td>Active</td>
+<th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Animal_migration" title="Animal migration">Animal migration</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Animal_migration" title="Animal migration">Animal migration</a>
+<ul>
+<li><a href="/wiki/Altitudinal_migration" title="Altitudinal migration">altitudinal</a></li>
+<li><a href="/wiki/Animal_migration_tracking" title="Animal migration tracking">tracking</a></li>
+<li><a href="/wiki/Coded_wire_tag" title="Coded wire tag">coded wire tag</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Bird_migration" title="Bird migration">Bird migration</a>
+<ul>
+<li><a href="/wiki/Category:Bird_migration_flyways" title="Category:Bird migration flyways">flyways</a></li>
+<li><a href="/wiki/Reverse_migration_(birds)" title="Reverse migration (birds)">reverse migration</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Cell_migration" title="Cell migration">Cell migration</a></li>
+<li><a href="/wiki/Fish_migration" title="Fish migration">Fish migration</a>
+<ul>
+<li><a href="/wiki/Diel_vertical_migration" title="Diel vertical migration">diel vertical</a></li>
+<li><a href="/wiki/Lessepsian_migration" title="Lessepsian migration">lessepsian</a></li>
+<li><a href="/wiki/Salmon_run" title="Salmon run">salmon run</a></li>
+<li><a href="/wiki/Sardine_run" title="Sardine run">sardine run</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Homing_(biology)" title="Homing (biology)">Homing</a>
+<ul>
+<li><a href="/wiki/Natal_homing" title="Natal homing">natal</a></li>
+<li><a href="/wiki/Philopatry" title="Philopatry">philopatry</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Insect_migration" title="Insect migration">Insect migration</a>
+<ul>
+<li><a href="/wiki/Lepidoptera_migration" title="Lepidoptera migration">butterflies</a>
+<ul>
+<li><a href="/wiki/Monarch_butterfly_migration" title="Monarch butterfly migration">monarch</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/wiki/Sea_turtle_migration" title="Sea turtle migration">Sea turtle migration</a></li>
+</ul>
+</div>
+</td>
 </tr>
 <tr>
-<th scope="row" style="white-space: nowrap;">Written in</th>
-<td><a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a></td>
+<th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Swarm_behaviour#Models" title="Swarm behaviour">Swarm algorithms</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Agent-based_model" title="Agent-based model">Agent-based models</a></li>
+<li><a href="/wiki/Ant_colony_optimization_algorithms" title="Ant colony optimization algorithms">Ant colony optimization</a></li>
+<li><a href="/wiki/Artificial_Ants" class="mw-redirect" title="Artificial Ants">Artificial ants</a></li>
+<li><a class="mw-selflink selflink">Boids</a></li>
+<li><a href="/wiki/Crowd_simulation" title="Crowd simulation">Crowd simulation</a></li>
+<li><a href="/wiki/Particle_swarm_optimization" title="Particle swarm optimization">Particle swarm optimization</a></li>
+<li><a href="/wiki/Swarm_intelligence" title="Swarm intelligence">Swarm intelligence</a></li>
+<li><a href="/wiki/Swarm_(simulation)" title="Swarm (simulation)">Swarm (simulation)</a></li>
+</ul>
+</div>
+</td>
 </tr>
 <tr>
-<th scope="row" style="white-space: nowrap;"><a href="/wiki/Operating_system" title="Operating system">Operating system</a></th>
-<td><a href="/wiki/Cross-platform" title="Cross-platform">Cross-platform</a></td>
+<th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Collective_motion" title="Collective motion">Collective motion</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Active_matter" title="Active matter">Active matter</a></li>
+<li><a href="/wiki/Collective_motion" title="Collective motion">Collective motion</a></li>
+<li><a href="/wiki/Self-propelled_particles" title="Self-propelled particles">Self-propelled particles</a>
+<ul>
+<li><a href="/wiki/Clustering_of_self-propelled_particles" title="Clustering of self-propelled particles">clustering</a></li>
+</ul>
+</li>
+<li><a href="/wiki/Vicsek_model" title="Vicsek model">Vicsek model</a></li>
+</ul>
+</div>
+</td>
 </tr>
 <tr>
-<th scope="row" style="white-space: nowrap;"><a href="/wiki/Technical_standard" title="Technical standard">Standard</a>(s)</th>
-<td><a href="/wiki/XML" title="XML">XML</a>, <a href="/wiki/XHTML" title="XHTML">XHTML</a>, <a href="/wiki/HTML5" title="HTML5">HTML5</a></td>
+<th scope="row" class="navbox-group" style="width:1%"><a href="/wiki/Swarm_robotics" title="Swarm robotics">Swarm robotics</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Ant_robotics" title="Ant robotics">Ant robotics</a></li>
+<li><a href="/wiki/Intelligent_Small_World_Autonomous_Robots_for_Micro-manipulation" title="Intelligent Small World Autonomous Robots for Micro-manipulation">I-Swarm</a></li>
+<li><a href="/wiki/Microbotics" title="Microbotics">Microbotics</a></li>
+<li><a href="/wiki/Swarm_robotics" title="Swarm robotics">Swarm robotics</a></li>
+<li><a href="/wiki/Symbrion" title="Symbrion">Symbrion</a></li>
+</ul>
+</div>
+</td>
 </tr>
 <tr>
-<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_categories#Broad_categories" title="Software categories">Type</a></th>
-<td><a href="/wiki/Template_engine_(web)" class="mw-redirect" title="Template engine (web)">Template Engine</a></td>
-</tr>
-<tr>
-<th scope="row" style="white-space: nowrap;"><a href="/wiki/Software_license" title="Software license">License</a></th>
-<td><a href="/wiki/Apache_License" title="Apache License">Apache License</a> 2.0</td>
-</tr>
-<tr>
-<th scope="row" style="white-space: nowrap;">Website</th>
-<td><span class="url"><a rel="nofollow" class="external text" href="http://www.thymeleaf.org">www<wbr />.thymeleaf<wbr />.org</a></span></td>
+<th scope="row" class="navbox-group" style="width:1%">Related topics</th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Allee_effect" title="Allee effect">Allee effect</a></li>
+<li><a href="/wiki/Animal_navigation" title="Animal navigation">Animal navigation</a></li>
+<li><a href="/wiki/Collective_intelligence" title="Collective intelligence">Collective intelligence</a></li>
+<li><a href="/wiki/Decentralised_system" title="Decentralised system">Decentralised system</a></li>
+<li><a href="/wiki/Eusociality" title="Eusociality">Eusociality</a></li>
+<li><a href="/wiki/Group_size_measures" title="Group size measures">Group size measures</a></li>
+<li><a href="/wiki/Microbial_intelligence" title="Microbial intelligence">Microbial intelligence</a></li>
+<li><a href="/wiki/Mutualism_(biology)" title="Mutualism (biology)">Mutualism</a></li>
+<li><a href="/wiki/Predator_satiation" title="Predator satiation">Predator satiation</a></li>
+<li><a href="/wiki/Quorum_sensing" title="Quorum sensing">Quorum sensing</a></li>
+<li><a href="/wiki/Spatial_organization" title="Spatial organization">Spatial organization</a></li>
+<li><a href="/wiki/Stigmergy" title="Stigmergy">Stigmergy</a></li>
+<li><a href="/wiki/Swarming_(military)" title="Swarming (military)">Military swarming</a></li>
+<li><a href="/wiki/Task_allocation_and_partitioning_of_social_insects" title="Task allocation and partitioning of social insects">Task allocation and partitioning of social insects</a></li>
+</ul>
+</div>
+</td>
 </tr>
 </table>
-<p><b>Thymeleaf</b> is a <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> <a href="/wiki/XML" title="XML">XML</a>/<a href="/wiki/XHTML" title="XHTML">XHTML</a>/<a href="/wiki/HTML5" title="HTML5">HTML5</a> <a href="/wiki/Template_engine_(web)" class="mw-redirect" title="Template engine (web)">template engine</a> that can work both in web (<a href="/wiki/Servlet" class="mw-redirect" title="Servlet">Servlet</a>-based) and non-web environments. It is better suited for serving XHTML/HTML5 at the view layer of <a href="/wiki/Model%E2%80%93view%E2%80%93controller" title="Model–view–controller">MVC</a>-based web applications, but it can process any XML file even in offline environments. It provides full <a href="/wiki/Spring_Framework" title="Spring Framework">Spring Framework</a> integration.</p>
-<p>In web applications Thymeleaf aims to be a complete substitute for <a href="/wiki/JavaServer_Pages" title="JavaServer Pages">JSP</a>, and implements the concept of <i>Natural Templates</i>: template files that can be directly opened in browsers and that still display correctly as web pages.</p>
-<p>Thymeleaf is <a href="/wiki/Open_source_software" class="mw-redirect" title="Open source software">Open-Source Software</a>, licensed under the <a href="/wiki/Apache_License_2.0" class="mw-redirect" title="Apache License 2.0">Apache License 2.0</a>.</p>
-<p></p>
-<div id="toc" class="toc">
-<div id="toctitle" class="toctitle">
-<h2>Contents</h2>
 </div>
-<ul>
-<li class="toclevel-1 tocsection-1"><a href="#Features"><span class="tocnumber">1</span> <span class="toctext">Features</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="#Thymeleaf_example"><span class="tocnumber">2</span> <span class="toctext">Thymeleaf example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
-</ul>
-</div>
-<p></p>
-<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Thymeleaf&amp;action=edit&amp;section=1" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>From the project's website:<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup></p>
-<ul>
-<li>Java <a href="/wiki/Template_engine_(web)" class="mw-redirect" title="Template engine (web)">template engine</a> for <a href="/wiki/XML" title="XML">XML</a>, <a href="/wiki/XHTML" title="XHTML">XHTML</a> and <a href="/wiki/HTML5" title="HTML5">HTML5</a>.</li>
-<li>Works both in web and non-web (offline) environments. No hard dependency on the <a href="/wiki/Servlet" class="mw-redirect" title="Servlet">Servlet</a> API.</li>
-<li>Based on modular feature sets called <i>dialects</i>.
-<ul>
-<li>Dialect features (e.g.: evaluation, iteration, etc.) are applied by linking them to template's tags and/or attributes.</li>
-<li>Two dialects available out-of-the-box: Standard and SpringStandard (for <a href="/wiki/Spring_MVC" class="mw-redirect" title="Spring MVC">Spring MVC</a> apps, same syntax as Standard).</li>
-<li>Developers can extend and create custom dialects.</li>
-</ul>
-</li>
-<li>Several template modes:
-<ul>
-<li><b><a href="/wiki/XML" title="XML">XML</a></b>: validating against a <a href="/wiki/Document_Type_Definition" class="mw-redirect" title="Document Type Definition">DTD</a> or not.</li>
-<li><b><a href="/wiki/XHTML" title="XHTML">XHTML</a> 1.0 and 1.1</b>: validating against standard <a href="/wiki/Document_Type_Definition" class="mw-redirect" title="Document Type Definition">DTDs</a> or not.</li>
-<li><b><a href="/wiki/HTML5" title="HTML5">HTML5</a></b>: both XML-formed code and legacy-based HTML5. Legacy non-XML code will be automatically cleaned and converted to <a href="/wiki/XML" title="XML">XML</a> form.</li>
-</ul>
-</li>
-<li>Full (and extensible) <b>internationalization</b> support.</li>
-<li>Configurable, high performance <b>parsed template cache</b> that reduces input/output to the minimum.</li>
-<li>Automatic DOCTYPE translations –from template <a href="/wiki/Document_Type_Definition" class="mw-redirect" title="Document Type Definition">DTD</a> to result DTD– for (optional) validation of both template and result code.</li>
-<li>Extremely extensible: can be used as a template engine framework if needed.</li>
-<li>Complete documentation including several example applications.</li>
-</ul>
-<h2><span class="mw-headline" id="Thymeleaf_example">Thymeleaf example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Thymeleaf&amp;action=edit&amp;section=2" title="Edit section: Thymeleaf example">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<p>The following example produces an HTML5 table with rows for each item of a <i>List&lt;Product&gt;</i> variable called <i>all Products</i>.</p>
-<div class="mw-highlight mw-content-ltr" dir="ltr">
-<pre>
-<span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">th</span> <span class="na">th:text</span><span class="o">=</span><span class="s">"#{msgs.headers.name}"</span><span class="p">&gt;</span>Name<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">th</span> <span class="na">th:text</span><span class="o">=</span><span class="s">"#{msgs.headers.price}"</span><span class="p">&gt;</span>Price<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">tr</span> <span class="na">th:each</span><span class="o">=</span><span class="s">"prod : ${allProducts}"</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">th:text</span><span class="o">=</span><span class="s">"${prod.name}"</span><span class="p">&gt;</span>Oranges<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span> <span class="na">th:text</span><span class="o">=</span><span class="s">"${#numbers.formatDecimal(prod.price,1,2)}"</span><span class="p">&gt;</span>0.99<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</pre></div>
-<p>This piece of code includes:</p>
-<ul>
-<li>Internationalization expressions: <i><span style="color:#708090;">#{ ... } rh</span></i></li>
-<li>Variable/model-attribute evaluation expressions: <i><span style="color:#708090;">${ ... }</span></i></li>
-<li>Utility functions: <i><span style="color:#708090;">#numbers.formatDecimal( ... )</span></i></li>
-</ul>
-<p>Also, this fragment of (X)HTML code can be perfectly displayed by a browser as a prototype, without being processed at all: it is a <i>natural template</i>.</p>
-<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Thymeleaf&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<ul>
-<li><a href="/wiki/Template_engine_(web)" class="mw-redirect" title="Template engine (web)">Template Engine (web)</a></li>
-<li><a href="/wiki/JavaServer_Pages" title="JavaServer Pages">JSP</a></li>
-<li><a href="/wiki/Spring_Framework" title="Spring Framework">Spring Framework</a></li>
-<li><a href="/wiki/FreeMarker" title="FreeMarker">FreeMarker</a></li>
-<li><a href="/wiki/Apache_Velocity" title="Apache Velocity">Apache Velocity</a></li>
-<li><a href="/wiki/Template_Attribute_Language" title="Template Attribute Language">Template Attribute Language</a></li>
-</ul>
-<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Thymeleaf&amp;action=edit&amp;section=4" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<div class="reflist" style="list-style-type: decimal;">
-<ol class="references">
-<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://forum.thymeleaf.org/Thymeleaf-3-0-2-JUST-PUBLISHED-td4029985.html">http://forum.thymeleaf.org/Thymeleaf-3-0-2-JUST-PUBLISHED-td4029985.html</a> Release announcement</span></li>
-<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.thymeleaf.org/features.html">http://www.thymeleaf.org/features.html</a> Thymeleaf Features</span></li>
-</ol>
-</div>
-<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Thymeleaf&amp;action=edit&amp;section=5" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-<ul>
-<li><a rel="nofollow" class="external text" href="http://www.thymeleaf.org">Thymeleaf</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.thymeleaf.org/doc/articles/thvsjsp.html">Spring MVC view layer: Thymeleaf vs. JSP</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html">Tutorial: Using Thymeleaf (2.1)</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.springframework.org">Spring Framework</a></li>
-<li><a rel="nofollow" class="external text" href="http://www.freemarker.org">FreeMarker</a></li>
-<li><a rel="nofollow" class="external text" href="http://velocity.apache.org">Apache Velocity</a></li>
-<li><a rel="nofollow" class="external text" href="http://blog.iprofs.nl/2013/02/12/thymeleaf-create-page-templates-for-web-and-non-web-environments">Thymeleaf introduction: Create page templates for web and non-web environments</a></li>
-</ul>
 
 
 <!-- 
 NewPP limit report
-Parsed by mw1221
-Cached time: 20170505073532
+Parsed by mw1257
+Cached time: 20170610184117
 Cache expiry: 2592000
 Dynamic content: false
-CPU time usage: 0.080 seconds
-Real time usage: 0.106 seconds
-Preprocessor visited node count: 573/1000000
+CPU time usage: 0.176 seconds
+Real time usage: 0.216 seconds
+Preprocessor visited node count: 699/1000000
 Preprocessor generated node count: 0/1500000
-Post‐expand include size: 7908/2097152 bytes
-Template argument size: 1282/2097152 bytes
-Highest expansion depth: 25/40
-Expensive parser function count: 2/500
-Lua time usage: 0.026/10.000 seconds
-Lua memory usage: 979 KB/50 MB
+Post‐expand include size: 35060/2097152 bytes
+Template argument size: 99/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 1/500
+Lua time usage: 0.065/10.000 seconds
+Lua memory usage: 2.89 MB/50 MB
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-111.07%   99.148      2 Template:Infobox
-100.00%   89.270      1 -total
- 95.23%   85.012      1 Template:Infobox_software
- 34.70%   30.978      1 Template:Infobox_software/simple
- 10.18%    9.086      1 Template:Release_date
-  5.23%    4.669      1 Template:MONTHNAME
-  4.97%    4.433      1 Template:Url
-  4.01%    3.582      1 Template:Yesno-no
-  3.45%    3.084      1 Template:Reflist
-  3.41%    3.041      1 Template:MONTHNUMBER
+100.00%  154.814      1 -total
+ 62.08%   96.116      1 Template:Reflist
+ 28.67%   44.382      5 Template:Cite_journal
+ 16.52%   25.579      1 Template:Collective_animal_behaviour
+ 14.53%   22.490      1 Template:Use_mdy_dates
+ 13.33%   20.636      5 Template:Cite_conference
+ 13.32%   20.615      1 Template:Navbox
+  5.97%    9.240      1 Template:DMCA
+  5.18%    8.021      1 Template:Dated_maintenance_category
+  3.37%    5.225      1 Template:FULLROOTPAGENAME
 -->
-
-<!-- Saved in parser cache with key enwiki:pcache:idhash:33427161-0!*!0!!en!4!* and timestamp 20170505073534 and revision id 778791908
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:404015-0!canonical and timestamp 20170610184117 and revision id 781733927
  -->
 <noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
-						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Thymeleaf&amp;oldid=778791908">https://en.wikipedia.org/w/index.php?title=Thymeleaf&amp;oldid=778791908</a>"					</div>
-				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Java_enterprise_platform" title="Category:Java enterprise platform">Java enterprise platform</a></li><li><a href="/wiki/Category:Template_engines" title="Category:Template engines">Template engines</a></li><li><a href="/wiki/Category:Java_(programming_language)_libraries" title="Category:Java (programming language) libraries">Java (programming language) libraries</a></li><li><a href="/wiki/Category:Free_software_programmed_in_Java_(programming_language)" title="Category:Free software programmed in Java (programming language)">Free software programmed in Java (programming language)</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_deprecated_image_syntax" title="Category:Pages using deprecated image syntax">Pages using deprecated image syntax</a></li></ul></div></div>				<div class="visualClear"></div>
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Boids&amp;oldid=781733927">https://en.wikipedia.org/w/index.php?title=Boids&amp;oldid=781733927</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Artificial_life" title="Category:Artificial life">Artificial life</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_mdy_dates_from_July_2011" title="Category:Use mdy dates from July 2011">Use mdy dates from July 2011</a></li></ul></div></div>				<div class="visualClear"></div>
 							</div>
 		</div>
 		<div id="mw-navigation">
@@ -229,14 +324,14 @@ Transclusion expansion time report (%,ms,calls,template)
 									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
 						<h3 id="p-personal-label">Personal tools</h3>
 						<ul>
-							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Thymeleaf" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Thymeleaf" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Boids" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Boids" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
 					</div>
 									<div id="left-navigation">
 										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
 						<h3 id="p-namespaces-label">Namespaces</h3>
 						<ul>
-															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Thymeleaf"  title="View the content page [c]" accesskey="c">Article</a></span></li>
-															<li  id="ca-talk"><span><a href="/wiki/Talk:Thymeleaf"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Boids"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Boids"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
 													</ul>
 					</div>
 										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
@@ -254,9 +349,9 @@ Transclusion expansion time report (%,ms,calls,template)
 										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
 						<h3 id="p-views-label">Views</h3>
 						<ul>
-															<li id="ca-view" class="selected"><span><a href="/wiki/Thymeleaf" >Read</a></span></li>
-															<li id="ca-edit"><span><a href="/w/index.php?title=Thymeleaf&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
-															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Thymeleaf&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Boids" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Boids&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Boids&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
 													</ul>
 					</div>
 										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
@@ -302,7 +397,7 @@ Transclusion expansion time report (%,ms,calls,template)
 
 			<div class="body">
 									<ul>
-						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Thymeleaf" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Thymeleaf" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Thymeleaf&amp;oldid=778791908" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Thymeleaf&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q3526177" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Thymeleaf&amp;id=778791908" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Boids" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Boids" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Boids&amp;oldid=781733927" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Boids&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Q833640" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Boids&amp;id=781733927" title="Information on how to cite this page">Cite this page</a></li>					</ul>
 							</div>
 		</div>
 			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
@@ -310,7 +405,7 @@ Transclusion expansion time report (%,ms,calls,template)
 
 			<div class="body">
 									<ul>
-						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Thymeleaf">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Thymeleaf&amp;returnto=Thymeleaf&amp;oldid=778791908&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Thymeleaf&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Boids">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Boids&amp;action=show-selection-screen&amp;coll-download-url=%2Fw%2Findex.php%3Ftitle%3DSpecial%3ABook%26bookcmd%3Drender_article%26arttitle%3DBoids%26returnto%3DBoids%26oldid%3D781733927%26writer%3Drdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Boids&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
 							</div>
 		</div>
 			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
@@ -318,14 +413,14 @@ Transclusion expansion time report (%,ms,calls,template)
 
 			<div class="body">
 									<ul>
-						<li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Thymeleaf" title="Thymeleaf – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Thymeleaf" title="Thymeleaf – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li>					</ul>
-				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q3526177#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Boids" title="Boids – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Boids" title="Boids – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Boids" title="Boids – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/Boids" title="Boids – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Boids" title="Boids – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Boids" title="Boids – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%83%9C%E3%82%A4%E3%83%89_(%E4%BA%BA%E5%B7%A5%E7%94%9F%E5%91%BD)" title="ボイド (人工生命) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Algorytm_stada" title="Algorytm stada – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Q833640#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
 		</div>
 				</div>
 		</div>
 		<div id="footer" role="contentinfo">
 							<ul id="footer-info">
-											<li id="footer-info-lastmod"> This page was last edited on 5 May 2017, at 07:35.</li>
+											<li id="footer-info-lastmod"> This page was last edited on 22 May 2017, at 22:39.</li>
 											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
 additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
 									</ul>
@@ -336,7 +431,7 @@ additional terms may apply.  By using this site, you agree to the <a href="//wik
 											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
 											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
 											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
-											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Thymeleaf&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Boids&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
 									</ul>
 										<ul id="footer-icons" class="noprint">
 											<li id="footer-copyrightico">
@@ -346,6 +441,6 @@ additional terms may apply.  By using this site, you agree to the <a href="//wik
 									</ul>
 						<div style="clear:both"></div>
 		</div>
-		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.080","walltime":"0.106","ppvisitednodes":{"value":573,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":7908,"limit":2097152},"templateargumentsize":{"value":1282,"limit":2097152},"expansiondepth":{"value":25,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["111.07%   99.148      2 Template:Infobox","100.00%   89.270      1 -total"," 95.23%   85.012      1 Template:Infobox_software"," 34.70%   30.978      1 Template:Infobox_software/simple"," 10.18%    9.086      1 Template:Release_date","  5.23%    4.669      1 Template:MONTHNAME","  4.97%    4.433      1 Template:Url","  4.01%    3.582      1 Template:Yesno-no","  3.45%    3.084      1 Template:Reflist","  3.41%    3.041      1 Template:MONTHNUMBER"]},"scribunto":{"limitreport-timeusage":{"value":"0.026","limit":"10.000"},"limitreport-memusage":{"value":1002895,"limit":52428800}},"cachereport":{"origin":"mw1221","timestamp":"20170505073532","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":51,"wgHostname":"mw1236"});});</script>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.176","walltime":"0.216","ppvisitednodes":{"value":699,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":35060,"limit":2097152},"templateargumentsize":{"value":99,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  154.814      1 -total"," 62.08%   96.116      1 Template:Reflist"," 28.67%   44.382      5 Template:Cite_journal"," 16.52%   25.579      1 Template:Collective_animal_behaviour"," 14.53%   22.490      1 Template:Use_mdy_dates"," 13.33%   20.636      5 Template:Cite_conference"," 13.32%   20.615      1 Template:Navbox","  5.97%    9.240      1 Template:DMCA","  5.18%    8.021      1 Template:Dated_maintenance_category","  3.37%    5.225      1 Template:FULLROOTPAGENAME"]},"scribunto":{"limitreport-timeusage":{"value":"0.065","limit":"10.000"},"limitreport-memusage":{"value":3029616,"limit":52428800}},"cachereport":{"origin":"mw1257","timestamp":"20170610184117","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":60,"wgHostname":"mw1275"});});</script>
 	</body>
 </html>

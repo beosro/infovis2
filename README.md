@@ -9,25 +9,19 @@
 
 `python3` >>> `import nltk` >>> `nltk.download()` >>> `l` >>> `all`
 
-`pip3 install flask`
+`sudo pip3 install flask`
 
-`pip3 install Flask-WTF`
+`sudo pip3 install Flask-WTF`
 
-`pip3 install HTMLparser`
+`sudo pip3 install HTMLparser`
 
 
-`sudo pip3 install virtualenv`
-`cd interface`
-`. venv/bin/activate` //http://flask.pocoo.org/docs/0.11/installation/
 
-`python3 main.py`
-
+tested with Ubuntu 16.04 LTS
 
 ## Benutzung
 
 `cd ...interface`
-
-`. venv/bin/activate`
 
 `python3 main.py`
 
