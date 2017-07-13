@@ -1,4 +1,8 @@
-# infovis2
+# Informationsvisualisierung
+
+Frank Hasenbalg, 571087
+
+# Visualisierung von Wikipediatexten
 
 ## Installation
 `sudo apt-get install python3-setuptools python3-dev build-essential`
@@ -17,7 +21,7 @@
 
 
 
-tested with Ubuntu 16.04 LTS
+getestet mit  Ubuntu 16.04 LTS
 
 ## Benutzung
 
